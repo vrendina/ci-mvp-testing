@@ -19,4 +19,9 @@ public class ExampleUnitTest {
     public void addition_isWrong() throws Exception {
         fail();
     }
+
+    @Test
+    public void addition_still_isWrong() throws Exception {
+        fail();
+    }
 }
