@@ -12,13 +12,16 @@ machine:
 
 dependencies:
     pre:
-        - touch app/google-services.json
-        - echo $GOOGLE_SERVICES_JSON > app/google-services.json
-        - echo y | android update sdk --no-ui --all --filter "android-25,build-tools-25.0.2"
-        - echo y | android update sdk --no-ui --all --filter "platform-tools,tools"
-        - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository, extra-google-m2repository"
-        - echo y | android update sdk --no-ui --all --filter "extra-android-support"
-        - echo y | android update sdk --no-ui --all --filter "extra-google-google_play_services"
+      - echo y | android update sdk --no-ui --all --filter "android-25,build-tools-25.0.2"
+      - echo y | android update sdk --no-ui --all --filter "platform-tools,tools"
+      - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository, extra-google-m2repository"
+      - echo y | android update sdk --no-ui --all --filter "extra-android-support"
+      - echo y | android update sdk --no-ui --all --filter "extra-google-google_play_services"
+
+      # ConstraintLayout
+      - echo y | /usr/local/android-sdk-linux/tools/bin/sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.0-beta5"
+      - echo y | /usr/local/android-sdk-linux/tools/bin/sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.0-beta5"
+
     cache_directories:
         - /usr/local/android-sdk-linux/tools
         - /usr/local/android-sdk-linux/build-tools/25.0.2
