@@ -1,7 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="Level Software">
-    <module2copyright>
-      <element module="All" copyright="Level Software" />
-    </module2copyright>
+  <settings default="">
+    <LanguageOptions name="SPI">
+      <option name="fileTypeOverride" value="1" />
+    </LanguageOptions>
   </settings>
 </component>

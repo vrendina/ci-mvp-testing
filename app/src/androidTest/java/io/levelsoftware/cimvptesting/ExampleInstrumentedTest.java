@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2017 Level Software LLC.
- */
-
 package io.levelsoftware.cimvptesting;
 
 import android.content.Context;
