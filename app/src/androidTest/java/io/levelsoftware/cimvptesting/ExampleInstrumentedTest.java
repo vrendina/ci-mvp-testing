@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2017 Level Software LLC.
+ */
+
 package io.levelsoftware.cimvptesting;
 
 import android.content.Context;
@@ -7,7 +11,7 @@ import android.support.test.runner.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Instrumentation test, which will execute on an Android device.

@@ -1,7 +1,11 @@
+/*
+ * Copyright (c) 2017 Level Software LLC.
+ */
+
 package io.levelsoftware.cimvptesting;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class NumberActivity extends AppCompatActivity {
 
