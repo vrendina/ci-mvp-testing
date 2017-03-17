@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CI MVP Testing</string>
+
+    <string name="tv_number1">First Number</string>
+    <string name="tv_number2">Second Number</string>
+
+    <string name="btn_add">Add</string>
 </resources>

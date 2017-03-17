@@ -1,15 +1,14 @@
-package io.levelsoftware.cimvptesting.ui.number;
+package io.levelsoftware.cimvptesting.ui.result;
 
 import io.levelsoftware.cimvptesting.ui.base.BasePresenter;
 import io.levelsoftware.cimvptesting.ui.base.BaseView;
 
-public interface NumberContract {
-
+public interface ResultContract {
     interface Presenter extends BasePresenter {
 
-        int calculateResult(int numberOne, int numberTwo);
+        void updateResult(int result);
 
-        int parseNumber(CharSequence sequence);
+        int getResult();
 
     }
 
