@@ -21,7 +21,7 @@ public class ResultPresenterTest {
     }
 
     @Test
-    public void presenterUpdateResult_Expect_CallDisplayResult() throws Exception {
+    public void presenterUpdateResult_Expect_CallDisplayResultOnView() throws Exception {
         ResultContract.Presenter presenter = new ResultPresenter(resultsView);
         presenter.updateResult(RESULT);
 
