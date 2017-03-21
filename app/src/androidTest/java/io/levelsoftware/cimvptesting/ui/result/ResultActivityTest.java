@@ -1,7 +1,6 @@
 package io.levelsoftware.cimvptesting.ui.result;
 
 import android.content.Intent;
-import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -21,7 +20,7 @@ import static org.hamcrest.Matchers.allOf;
 @RunWith(AndroidJUnit4.class)
 public class ResultActivityTest {
 
-    public static final int RESULT = 99;
+    public static final int RESULT = 1000;
 
     @Rule
     public ActivityTestRule<ResultActivity> activityTestRule
@@ -34,7 +33,7 @@ public class ResultActivityTest {
 
         activityTestRule.launchActivity(intent);
 
-        ViewInteraction textView = onView(allOf(withId(R.id.tv_result), isDisplayed()));
-        textView.check(matches(withText(RESULT)));
+        onView(allOf(withId(R.id.tv_result), isDisplayed()))
+                .check(matches(withText(String.valueOf(RESULT))));
     }
 }
