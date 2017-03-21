@@ -21,18 +21,16 @@ public class ResultPresenterTest {
     }
 
     @Test
-    public void updateResultCallsDisplayResult() throws Exception {
+    public void presenterUpdateResult_Expect_CallDisplayResult() throws Exception {
         ResultContract.Presenter presenter = new ResultPresenter(resultsView);
-
         presenter.updateResult(RESULT);
 
         verify(resultsView).displayResult();
     }
 
     @Test
-    public void updateResultThenGetResult() throws Exception {
+    public void presenterUpdateResult_Expect_SetsResult() throws Exception {
         ResultContract.Presenter presenter = new ResultPresenter(resultsView);
-
         presenter.updateResult(RESULT);
 
         assertEquals(presenter.getResult(), RESULT);
