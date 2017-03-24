@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        release {
-            keyAlias 'levelsoftware'
-            keyPassword 't30@6tzoecLqu1b$'
-            storeFile file('/Users/vrendina/.android-keystore/keystore.jks')
-            storePassword 'k5wSf4qWm!&ud3S$'
-        }
-    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -27,7 +19,6 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
 }
